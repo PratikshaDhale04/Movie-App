@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #e50914;
+    --primary-hover: #b20710;
+    --secondary-color: #00d4ff;
+    --accent-purple: #a855f7;
+    --accent-green: #22c55e;
+    --accent-orange: #f97316;
+    --accent-pink: #ec4899;
+    --bg-dark: #f0f2f5;
+    --bg-darker: #e4e6eb;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f5f5f5;
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a4a4a;
+    --text-muted: #888888;
+    --gradient-red: linear-gradient(135deg, #e50914 0%, #b20710 100%);
+    --gradient-blue: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+    --gradient-purple: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+    --gradient-green: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    --gradient-orange: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    --gradient-pink: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+    --gradient-rainbow: linear-gradient(90deg, #e50914, #f97316, #22c55e, #00d4ff, #a855f7, #ec4899);
+    --gradient-dark: linear-gradient(180deg, rgba(240,242,245,0) 0%, rgba(240,242,245,1) 100%);
+    --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+    --shadow-card: 0 8px 32px rgba(0,0,0,0.08);
+    --shadow-glow-red: 0 0 20px rgba(229, 9, 20, 0.3);
+    --shadow-glow-blue: 0 0 20px rgba(0, 212, 255, 0.3);
+    --shadow-glow-purple: 0 0 20px rgba(168, 85, 247, 0.3);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(0, 0, 0, 0.08);
+    --border-radius: 12px;
+    --border-radius-sm: 8px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-darker); }
+::-webkit-scrollbar-thumb { background: var(--primary-color); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary-hover); }
+
+a { text-decoration: none; color: inherit; transition: var(--transition-smooth); }
+a:hover { color: var(--primary-color); }
+
+button { cursor: pointer; font-family: inherit; }

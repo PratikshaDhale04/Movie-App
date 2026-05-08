@@ -1,0 +1,100 @@
+.watchlist-page {
+    padding: 100px 20px 50px;
+    min-height: 100vh;
+}
+
+.watchlist-page .page-header {
+    margin-bottom: 30px;
+}
+
+.watchlist-page .page-header h2 {
+    color: var(--text-primary);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.watchlist-page .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+}
+
+.watchlist-page .empty-state i {
+    font-size: 4rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.watchlist-page .empty-state p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.watchlist-page .watchlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.watchlist-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 15px;
+    transition: var(--transition-smooth);
+}
+
+.watchlist-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.watchlist-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+.watchlist-card h5 {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.watchlist-card .btn-remove {
+    width: 100%;
+    background: rgba(229, 9, 20, 0.2);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+.watchlist-card .btn-remove:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .watchlist-page { padding: 80px 15px 30px; }
+    .watchlist-page .watchlist-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}

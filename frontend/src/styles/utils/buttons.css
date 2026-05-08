@@ -1,0 +1,84 @@
+.btn-primary {
+    background: var(--gradient-red);
+    border: none;
+    padding: 12px 32px;
+    font-weight: 600;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-smooth);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow-red);
+}
+
+.btn-secondary {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: var(--text-primary);
+    padding: 12px 32px;
+    font-weight: 600;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-smooth);
+}
+
+.btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+.btn-login {
+    background: var(--gradient-blue);
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-smooth);
+    color: white;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow-blue);
+}
+
+.btn-signup {
+    background: var(--gradient-purple);
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-smooth);
+    color: white;
+}
+
+.btn-signup:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow-purple);
+}
+
+.btn-lg {
+    padding: 16px 40px;
+    font-size: 1.1rem;
+}
+
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--text-secondary);
+    background: transparent;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-smooth);
+}
+
+.btn-icon:hover {
+    background: var(--text-primary);
+    color: var(--bg-card);
+    transform: scale(1.1);
+}

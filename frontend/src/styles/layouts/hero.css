@@ -1,0 +1,68 @@
+.hero-banner {
+    position: relative;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.hero-banner > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-banner .gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, var(--bg-dark) 0%, rgba(240,242,245,0.3) 40%, transparent 100%);
+}
+
+.hero-banner .content {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    padding: 0 5%;
+    max-width: 700px;
+    z-index: 2;
+}
+
+.hero-banner .content h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-banner .content p {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.hero-banner .content .badge-custom {
+    animation: fadeInUp 0.8s ease-out 0.1s both;
+}
+
+.hero-banner .content .d-flex {
+    animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.hero-banner .content .text-warning {
+    color: #ffd700 !important;
+}
+
+.hero-banner .content .text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+@media (max-width: 768px) {
+    .hero-banner { height: 60vh; }
+    .hero-banner .content {
+        padding: 0 20px;
+        bottom: 10%;
+    }
+    .hero-banner .content h1 {
+        font-size: 2rem;
+    }
+}

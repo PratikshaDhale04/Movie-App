@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import './utils/variables.css';
+@import './utils/buttons.css';
+@import './utils/animations.css';
+
+@import './components/navbar.css';
+@import './components/movie-card.css';
+@import './components/footer.css';
+
+@import './layouts/hero.css';
+@import './layouts/movie-row.css';
+@import './layouts/auth.css';
+
+@import './pages/home.css';
+@import './pages/movies.css';
+@import './pages/movie-details.css';
+@import './pages/profile.css';
+@import './pages/watchlist.css';
+@import './pages/admin.css';
