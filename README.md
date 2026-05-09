@@ -1,136 +1,40 @@
-# CineVerse Pro
+# CineVerse Pro 🎬
 
-A Netflix-inspired movie streaming web application built with React, PHP, and MySQL/SQLite.
+CineVerse Pro is a Netflix-inspired movie streaming web application built with React, PHP, and MySQL/SQLite.
 
-## Features
-
-- Browse movies by category (Trending, Top Rated, Action, Sci-Fi, Drama, Comedy, Crime, Thriller, Horror, Animation)
-- Dynamic movie cards with hover effects and overlay details
-- Search movies by title, genre, or category
-- User registration and authentication
-- Personal watchlist management
-- Movie reviews and ratings
-- Responsive design (mobile, tablet, desktop)
-- Dark/light theme support
+## ✨ Features
+- Movie browsing by category
+- Search functionality
+- User authentication
+- Watchlist management
+- Reviews & ratings
+- Responsive design
+- Dark/Light theme
 - Admin dashboard
 
-## Tech Stack
+## 🛠 Tech Stack
+- React, Bootstrap, Axios
+- PHP REST API
+- MySQL / SQLite
 
-- **Frontend:** React, React Router, Axios, Bootstrap 5
-- **Backend:** PHP (REST API)
-- **Database:** MySQL (primary) with auto SQLite fallback
-- **Styling:** Custom CSS with CSS variables
+## 📂 Main Components
+- Navbar
+- MovieCard
+- Banner
+- SearchBar
+- Review Section
+- Watchlist
+- Admin Panel
 
-## Setup
-
-### Prerequisites
-- PHP 7.4+
-- MySQL or MariaDB (optional — SQLite fallback works out of the box)
-- Node.js 16+ and npm
-
-### Installation
-
-1. Clone the repository into your web server directory:
+## ⚙️ Installation
 
 ```bash
 git clone https://github.com/yourusername/cineverse-pro.git
-```
-
-2. Set up the frontend:
-
-```bash
 cd frontend
 npm install
 npm run build
 ```
 
-3. Configure the backend:
-
-The backend API URL is set in the frontend source files. If your server runs on a different port, update `API_URL` in:
-- `frontend/src/pages/Home.js`
-- `frontend/src/pages/Movies.js`
-- `frontend/src/pages/MovieDetails.js`
-- `frontend/src/components/MovieCard.js`
-- `frontend/src/components/Navbar.js`
-- `frontend/src/context/AuthContext.js`
-
-Default: `http://localhost/cineverse-pro/backend/api/`
-
-### Database Setup
-
-#### Option A: MySQL (Recommended for production)
-1. Start MySQL service
-2. The database and tables are created automatically on first connection, or manually import `database.sql`
-
-#### Option B: SQLite (Auto-fallback)
-If MySQL is unavailable, the app automatically uses a SQLite database stored at `backend/data/cineverse.db`. No setup required.
-
-Default accounts:
-- **Admin:** admin@cineverse.com / password
-- **Demo User:** user@cineverse.com / password
-
-## Adding Movies
-
-Edit `frontend/src/data/moviesData.js` and add a new object:
-
-```js
-{
-  id: 34,
-  title: "Your Movie",
-  poster: "https://placehold.co/400x600/141414/e50914?text=Your+Movie",
-  category: "Action",
-  genre: "Action",
-  rating: 8.0,
-  year: 2025,
-  description: "Movie description here.",
-  views: 1000000,
-  created_at: "2025-01-01",
-  trailer: "https://youtube.com/watch?v=example"
-}
-```
-
-Place poster images in `assets/posters/` and reference them as `assets/posters/filename.jpg`.
-
-## Project Structure
-
-```
-cineverse-pro/
-├── assets/              # Static assets (posters, videos)
-├── backend/
-│   ├── api/             # PHP API endpoints
-│   ├── config/          # Database configuration
-│   └── data/            # SQLite database (auto-created)
-├── frontend/
-│   ├── public/          # HTML template
-│   └── src/
-│       ├── components/  # Reusable React components
-│       ├── context/     # React context (auth)
-│       ├── data/        # Movie data source
-│       ├── pages/       # Page components
-│       └── styles/      # CSS stylesheets
-├── database.sql         # MySQL schema dump
-└── README.md
-```
-
-## API Endpoints
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `register.php` | POST | Create account |
-| `login.php` | POST | Sign in |
-| `logout.php` | GET | Sign out |
-| `fetch_movies.php` | GET | List movies |
-| `fetch_single_movie.php` | GET | Movie details |
-| `add_watchlist.php` | POST | Add to watchlist |
-| `remove_watchlist.php` | POST | Remove from watchlist |
-| `get_watchlist.php` | GET | Get watchlist |
-| `add_review.php` | POST | Submit review |
-| `get_reviews.php` | GET | Get reviews |
-| `add_history.php` | POST | Add to history |
-| `get_history.php` | GET | Get history |
-| `get_recommendations.php` | GET | Get recommendations |
-| `get_user.php` | GET | Get user profile |
-| `admin_dashboard.php` | GET | Admin stats |
-| `add_movie.php` | POST | Admin: add movie |
-| `update_movie.php` | POST | Admin: update movie |
-| `delete_movie.php` | POST | Admin: delete movie |
+## 🗄 Database
+- MySQL supported
+- SQLite fallback available
